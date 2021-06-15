@@ -27,13 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/desktop-view.jpg)
-![](./screenshots/mobile-view.jpg)
+![](./screenshots/desktop-view.png)
+![](./screenshots/mobile-view.png)
 
 
 ### Links
 
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://anshii12.github.io/frontend-mentor-challenge3/)
 
 
 ### Built with
