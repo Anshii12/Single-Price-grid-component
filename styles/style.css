@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color:hsl(204, 43%, 93%) ;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 700px;
+    margin:0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
+}
+
+
+.parts {
+    padding: 30px;
+}
+
+.first-part {
+    background-color: #fff;
+}
+
+.first-part h2 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.first-part h3 {
+    color:hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+
+}
+
+.first-part p{
+    color: hsl(218, 22%, 67%);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.second-part {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.second-part h3 {
+    margin-top: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.4rem; 
+}
+
+.second-part span {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.second-part p {
+    color: hsl(204, 43%, 93%);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.second-part .btn {
+    text-align: center;
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 20px;
+    box-shadow: rgba(66, 66, 71, 0.2) 0px 10px 29px 0px ;
+    transition: all 1s ease;
+    
+}
+
+.second-part .btn:hover {
+   background-color: #4abebd;
+}
+
+.third-part {
+    background-color: #4abebd;
+    font-weight: 400;
+}
+
+.third-part h3 {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.third-part p {
+    color: hsl(204, 43%, 93%);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+footer {
+    color: hsl(71, 73%, 54%);
+    background-color: hsl(204, 43%, 93%);
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .first-part {
+        grid-area: 1/ 1/ 2/ 3;
+    }
+
+    .second-part, .third-part {
+        grid-row: 2;
+    }
+}
